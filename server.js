@@ -56,6 +56,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/product', (req, res) => {
+    res.render('product.hbs', {
+        productMessage: 'This is an awesome product!'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'This is an error message'
