@@ -58,6 +58,7 @@ app.get('/about', (req, res) => {
 
 app.get('/product', (req, res) => {
     res.render('product.hbs', {
+        pageTitle: 'product page from injsection',
         productMessage: 'This is an awesome product!'
     });
 });
